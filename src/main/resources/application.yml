@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    azure:
+      servicebus:
+        entity-type: topic
+
+    function:
+      definition: consumeShutdownTest;produceShutdownTest
+    stream:
+      function:
+        bindings:
+          consumeShutdownTest-in-0: shutdown-test
+          produceShutdownTest-out-0: shutdown-test-creator

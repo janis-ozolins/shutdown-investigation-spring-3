@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        shutdown-test:
+          destination: shutdown-test
+          group: shutdown-test-sub
+        shutdown-test-creator:
+          destination: shutdown-test
+    azure:
+      servicebus:
+        connection-string: "Endpoint=sb://X.servicebus.windows.net/;SharedAccessKeyName=SendAndListenPolicy;SharedAccessKey=Y"
