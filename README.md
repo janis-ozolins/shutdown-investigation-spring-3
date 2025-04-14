@@ -10,7 +10,7 @@ Event suppliers are shut down before consumers.
 Update `application-local.yml` with appropriate environment configuration.
 
 ```shell
-./gradlew bootRun --args='--spring.profiles.active=dev'
+./gradlew bootRun --args='--spring.profiles.active=local'
 ```
 
 #### Event generator
